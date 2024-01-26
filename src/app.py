@@ -48,7 +48,7 @@ def handle_hello():
 
 
     
-@app.route('/members', methods=['POST'])
+@app.route('/member', methods=['POST'])
 def handle_addmember():
     data = request.get_json()
     jackson_family.add_member(data)
